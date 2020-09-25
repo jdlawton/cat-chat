@@ -1,7 +1,7 @@
 const {Schema, model, Types} = require ('mongoose');
 const moment = require('moment');
 
-//Reaction schema goes here.
+//Reaction schema exists in Thought.js because the reactions are only going to exists as subdocuments of a Thought document
 const ReactionSchema = new Schema (
     {
         //reactionId is a separate ObjectId from _id, used to make distinguishing the Thought id and the Reaction id easier.
