@@ -14,8 +14,18 @@ const UserSchema = new Schema (
             required: "Please enter an email address!",
             match: [/.+\@.+\..+/] //regex to validate the email address.
         },
-        thoughts: [],
-        friends: []
+        thoughts: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Thought'
+            }
+        ],
+        friends: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'User'
+            }
+        ]
     },
     {
         toJSON: {
