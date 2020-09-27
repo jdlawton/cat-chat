@@ -14,7 +14,6 @@
 
   ## Table of Contents
   * [Description](#description)
-  * [Walkthrough](#walkthrough video)
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
